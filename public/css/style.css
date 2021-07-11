@@ -1,0 +1,372 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-color: #CEC3B8;
+}
+
+header{
+    background: #22333B;
+	width: 100%;
+	height: 70px;
+
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    /*background: coral;*/
+    margin: auto;
+}
+
+.logo{
+    width: 30%;
+    height: 70px;
+   /* background: darkgoldenrod;*/
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.logo p a{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: rale;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    /*background: darkorchid;*/
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+
+}
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: rale;
+}
+nav ul li a:hover{
+    color: rgb(12, 10, 10);
+}
+
+@font-face{
+    font-family: rale;
+    src: url(fuentes/Raleway-VariableFont_wght.ttf)
+}
+.encabezado{
+    background-color:#22333B;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    height: 50px;
+}
+
+.post-list{
+	display: flex;
+	min-height: 100vh;
+	align-items:center;
+	justify-content: center;
+	padding: 30px 15px;
+}
+.content{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	max-width: 1000px;
+	margin: auto;
+}
+.post-img1{
+	background: url(imagenes/bill-gates.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img2{
+	background: url(imagenes/bitcoin.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img3{
+	background: url(imagenes/epicgames.png);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img4{
+	background: url(imagenes/tokio-ConvertImage.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img5{
+	background: url(imagenes/WhatsApp.png);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img6{
+	background: url(imagenes/resident-evil-village-lady-dimetrscu-ConvertImage.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post{
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	transition: .2s;
+	background-color: #A9927D
+}
+.post:hover{
+	transform: translate(-4px);
+	box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+.post-header{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.post:hover .post-img1,
+.post:hover .post-img2,
+.post:hover .post-img3{
+	transform: scale(1.1);
+}
+.post-body{
+	padding: 15px;
+	text-align: center;
+}
+.post-body span{
+	display: inline-block;
+	color: #22333B;
+	margin-bottom: 10px;
+}
+.post-body h2{
+	margin-bottom: 15px;
+}
+.post-body p{
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.post-body .post-link{
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	background-color: #22333B;
+	color: seashell;
+	width: 50%;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: 1 px 2px 6 px 1px rgba(0, 0, 0, .1);  
+	transition: .2s;
+}
+.post-body .post-link:hover{
+	background: rgb(81, 54, 126);
+	box-shadow: 1 px 2px 6 px 1px rgba(0, 0, 0, .2);  
+	transform: translateY(-2px);
+}
+@media (max-width: 840px){
+	.content{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 600px){
+	.content{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.container{
+	width:80%;
+	height: 70vh;
+	background-color:#CEC3B8;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	
+}
+.box{
+	width:350px;
+	height:610px;
+	background-color:#5E503F;
+	border-radius: 10px;
+	box-shadow: 2px 10px 12px rgba(211, 208, 208, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 20px 10px;
+}
+.model{
+	height: 350px;
+	max-height: 100%;
+	max-width: 100%;
+}
+.details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+.details p{
+	font-family: calibri;
+	font-weight: bold;
+	color:#000000;
+	text-align: center;
+	margin-top: 20px;
+}
+.nombre{
+	color:#000000;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: bebas kai;
+	font-size: 25px;
+}
+.logo{
+	height: 60px;
+}
+.box:hover{
+	background-color: #A9927D;
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
+}
+.box:hover.personas{
+	color:#000000;
+	transition: all ease 0.5s;
+}
+
+@media(max-width:720px){
+	.box{
+		width: 94%;
+		height: 500px;
+	}
+	.model{
+		height:250px;
+	}
+	.details p{
+		font-size: 16px;
+		width: 250px;
+	}
+	
+}
+.post-img7{
+	background: url(imagenes/cuestionarios/planetas-test.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img8{
+	background: url(imagenes/cuestionarios/alan-turing-.jpeg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img9{
+	background: url(imagenes/resident-evil-village-lady-dimetrscu-ConvertImage.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+
+
+footer{
+	margin-top: 100px;
+	 background-color: #22333B;
+	 line-height: 3;
+	 text-align: center;
+	 width: 100%;
+ }
+
+ .social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-facebook2{
+    background: #2E406E;
+}
+
+.icon-twitter{
+    background: #339DC5;
+}
+
+.icon-youtube{
+    background: #E83028;
+}
+
+.icon-instagram{
+    background: #3f60a5;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 0;
+    box-shadow: 0 0 .5rem rgba(0 ,0, 0, 0.42);
+}

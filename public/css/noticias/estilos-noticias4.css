@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background: #5f9ea0;
+    height: 70px;
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    /*background: coral;*/
+    margin: auto;
+}
+
+.logo{
+    width: 30%;
+    height: 70px;
+   /* background: darkgoldenrod;*/
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.logo p a{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: rale;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    /*background: darkorchid;*/
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: rale;
+}
+nav ul li a:hover{
+    color: rgb(12, 10, 10);
+}
+@font-face{
+    font-family: rale;
+    src: url(fuentes/Raleway-VariableFont_wght.ttf)
+}
+
+
+article{
+    
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.im1{
+    width: 30%;
+    padding-right: 35%;
+    padding-left: 35%;
+
+}
+
+.im2{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 80px;
+}
+
+article h1{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+article p{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    margin-top: 100px;
+     background-color: rgba(120, 120, 120, .5);
+     line-height: 3;
+     text-align: center;
+     width: 100%;
+ }
+ 
+ .social-bar{
+     position: fixed;
+     right: 0;
+     top: 35%;
+     font-size: 1.5rem;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     z-index: 100;
+ }
+ 
+ .icon{
+     color: white;
+     text-decoration: none;
+     padding: .7rem;
+     display: flex;
+     transition: all .5s;
+ }
+ 
+ .icon-facebook2{
+     background: #2E406E;
+ }
+ 
+ .icon-twitter{
+     background: #339DC5;
+ }
+ 
+ .icon-youtube{
+     background: #E83028;
+ }
+ 
+ .icon-instagram{
+     background: #3f60a5;
+ }
+ 
+ .icon:first-child{
+     border-radius: 1rem 0 0 0;
+ }
+ 
+ .icon:last-child{
+     border-radius: 0 0 0 1rem;
+ }
+ 
+ .icon:hover{
+     padding-right: 3rem;
+     border-radius: 1rem 0 0 0;
+     box-shadow: 0 0 .5rem rgba(0 ,0, 0, 0.42);
+ }
+
